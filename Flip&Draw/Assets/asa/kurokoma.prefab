@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4870658299118901893}
   - component: {fileID: 6922948820052090137}
   - component: {fileID: 2052650608866353335}
+  - component: {fileID: 6693331262899270774}
   m_Layer: 0
   m_Name: kurokoma
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4870658299118901892}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.58, y: -0.63, z: 0}
+  m_LocalPosition: {x: 0.62, y: -0.62, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -96,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 4870658299118901892}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c23826da2d9533948a1af3444bf23ab6, type: 2}
+  m_Controller: {fileID: 9100000, guid: aa208d7fe5b055c45bb1bc5c5d7aa72a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -202,3 +203,30 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6693331262899270774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4870658299118901892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30abcbb190ec1594e825ce10824f6c0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _selection: 0
+  _animationClipSource: Assets/animation
+  _animatorControllerSource: Assets/animation
+  _clipDataArray:
+  - clipName: black-fade-in
+    isLooping: 0
+  - clipName: black_to_white
+    isLooping: 0
+  - clipName: grey-fade-in
+    isLooping: 0
+  - clipName: white-fade-in
+    isLooping: 0
+  - clipName: white_to_black
+    isLooping: 0
+  _animator: {fileID: 6922948820052090137}
